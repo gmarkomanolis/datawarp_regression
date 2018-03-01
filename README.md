@@ -108,8 +108,10 @@ Test13: Stage out folder of 98 GB
 Test14: Use DataWarp API 
 Stage in API duration 30.047291 seconds
 14
-IOR execution 
-IOR execution with full DataWarp allocation 
+Test15: IOR execution
+15
+Test16:IOR execution with full DataWarp allocation 
+16
 ```
 
 For each TestX you should see the number X below, then the test is sucessfull. There will be one extra output file per IOR test.
