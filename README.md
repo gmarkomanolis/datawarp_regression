@@ -56,4 +56,61 @@ Many templates script are used to create the main ones, you can edit the templat
 ./dw_regression.sh
 ```
 
+# Output
+
+For example the output file will be in the results directory with the following format
+
+```
+dw_regression_01_03_2018_11_07_17.txt
+```
+
+With partial content:
+
+```
+wlm_pool bytes   1.5PiB 1.5PiB 368GiB 
+
+Active nodes: 268 drain nodes: 1
+
+Current usage: 
+
+Name=cray DefaultPool=wlm_pool Granularity=368GiB TotalSpace=1541TiB FreeSpace=1572096GiB UsedSpace=368GiB
+  Flags=EnablePersistent
+  StageInTimeout=1800 StageOutTimeout=1800 ValidateTimeout=5 OtherTimeout=300
+  AllowUsers=hadrib,markomg
+  GetSysState=/opt/cray/dw_wlm/default/bin/dw_wlm_cli
+  
+Test1: Use BB
+1
+Test2: Stage in folder BB
+2
+Test3: Stage out folder BB
+3
+Test4: Stage in folder BB
+4
+Test5: Stage out folder BB
+5
+Test6: Create Persistent Allocation
+OK
+Test7: Stage in folder BB Persistent
+7
+Test8: Stage out folder BB Persisten
+8
+Test9: Stage in file BB Persistent
+9
+Test10: Stage out file BB Persisten
+10
+Test11: Delete Persistent Allocation
+OK
+Test12: Stage in folder of 98 GB 
+12
+Test13: Stage out folder of 98 GB 
+13
+Test14: Use DataWarp API 
+Stage in API duration 30.047291 seconds
+14
+IOR execution 
+IOR execution with full DataWarp allocation 
+```
+
+For each TestX you should see the number X below, then the test is sucessfull. There will be one extra output file per IOR test.
 For issues and additions, contact me at georgios.markomanolis@kaust.edu.sa
