@@ -214,7 +214,7 @@ persistent=`dwstat most | grep bb_regression | grep public | wc -l`
 
 if [ $persistent -eq 1 ]
 then 
-	echo -e "Test6: Create Persistent Allocation\nOK" >> $output
+	echo -e "Test6: Create Persistent Allocation\n6" >> $output
 fi
 
 prepare_test 7
@@ -247,7 +247,7 @@ persistent=`dwstat most | grep bb_regression | grep public | wc -l`
 
 if [ $persistent -eq 0 ]
 then
-        echo -e "Test11: Delete Persistent Allocation\nOK" >> $output
+        echo -e "Test11: Delete Persistent Allocation\n11" >> $output
 fi
 
 # Stage in 98GB of data
