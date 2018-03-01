@@ -90,7 +90,7 @@ Test4: Stage in folder BB
 Test5: Stage out folder BB
 5
 Test6: Create Persistent Allocation
-OK
+6
 Test7: Stage in folder BB Persistent
 7
 Test8: Stage out folder BB Persisten
@@ -100,7 +100,7 @@ Test9: Stage in file BB Persistent
 Test10: Stage out file BB Persisten
 10
 Test11: Delete Persistent Allocation
-OK
+11
 Test12: Stage in folder of 98 GB 
 12
 Test13: Stage out folder of 98 GB 
