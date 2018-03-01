@@ -273,8 +273,8 @@ echo "BB nodes: "$bbnodes >> $output
 save bb_stage_api.out
 
 # IOR performance
-echo -e "\nExecute IOR"
-echo "IOR execution ">> $output
+echo -e "\nTest15: Execute IOR"
+echo "Test15: IOR execution ">> $output
 prepare_job_script run_ior_template.sh run_ior.sh $root_path
 $scheduler_options run_ior.sh
 wait_for_job bb_ior
@@ -282,6 +282,7 @@ cp bb_ior.out $results_folder/bb_ior_${output_date}.txt
 ior_run=`cat bb_ior.out | grep "Max " | wc -l`
 if [ $ior_run -eq 2 ];
 then
+        echo "15" >> $output
 	grep "Max " bb_ior.out >> $output
 	echo "IOR execution is successful"
 else
@@ -289,8 +290,8 @@ else
 fi
 
 if [ $run_big_ior -eq 1]; then
-	echo -e "\nExecute IOR with full DataWarp space allocation\n"
-	echo - e "\nIOR execution with full DataWarp allocation \n">> $output
+	echo -e "\nTest16: Execute IOR with full DataWarp space allocation\n"
+	echo - e "\nTest16: IOR execution with full DataWarp allocation \n">> $output
 	prepare_job_script big_ior_template.sh big_ior.sh $root_path
 	$scheduler_options big_ior.sh
 	wait_for_job bb_big_ior
@@ -298,6 +299,7 @@ if [ $run_big_ior -eq 1]; then
 	big_ior_run=`cat bb_big_ior.out | grep "Max " | wc -l`
 	if [ $ior_run -eq 2 ];
 	then
+                echo "16" >> $output
 	        echo "IOR with full DataWarp execution is successful"
 	        grep "Max " bb_big_ior.out >> $output
 	else
