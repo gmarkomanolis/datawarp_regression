@@ -5,6 +5,8 @@ These script were developed to test Cray DataWarp, before we release the system 
 
 The main script is called [dw_regression.sh](dw_regression.sh)
 
+## Script preparation
+
 You can edit the following in the above script:
 
 * If you use a command different than sbatch (the script is not ready to support other schedulers)
@@ -43,6 +45,11 @@ output=$results_folder"/dw_regression_"$output_date".txt"
 ```
 run_big_ior=1
 ```
+
+## Templates
+
+Many templates script are used to create the main ones, you can edit the template scripts if required by your system
+
 # Execute the regression suite
 
 ```
