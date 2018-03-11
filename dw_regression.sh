@@ -261,6 +261,7 @@ $scheduler_options stage_folder_big.sh
 wait_for_job bb_regression_stage_folder_big
 save stagefolder_bb_big.out
 
+echo -e "\nWaiting for stage-out to finish"
 compare_file_size
 
 # Test DataWarp API
