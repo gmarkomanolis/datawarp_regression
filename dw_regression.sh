@@ -292,7 +292,7 @@ else
         echo "There is a problem with at least one DataWarp node, contact your support"
 fi
 
-if [ $run_big_ior -eq 1]; then
+if [ $run_big_ior -eq 1 ]; then
 	echo -e "\nTest16: Execute IOR with full DataWarp space allocation\n"
 	echo - e "\nTest16: IOR execution with full DataWarp allocation \n">> $output
 	prepare_job_script big_ior_template.sh big_ior.sh $root_path
