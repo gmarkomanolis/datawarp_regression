@@ -105,7 +105,7 @@ function prepare_file {
 check=1
 if [ -f bigfile/file.txt ];
 then
-        filesize_bb=`du -k bigfile/file.txt`;
+        filesize_bb=`du -k bigfile/file.txt | awk '{print $1}'`;
 #        f_pfs=`echo $filesize_bb | awk '{print $1}' | sed 's/G//'`;
         if [ "$filesize_bb" -eq 102400576 ];
         then
