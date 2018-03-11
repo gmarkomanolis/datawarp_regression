@@ -294,7 +294,7 @@ fi
 
 if [ $run_big_ior -eq 1 ]; then
 	echo -e "\nTest16: Execute IOR with full DataWarp space allocation"
-	echo - e "\nTest16: IOR execution with full DataWarp allocation \n">> $output
+	echo -e "Test16: IOR execution with full DataWarp allocation">> $output
 	prepare_job_script big_ior_template.sh big_ior.sh $root_path
 	$scheduler_options big_ior.sh
 	wait_for_job bb_big_ior
