@@ -120,6 +120,7 @@ then
 	lfs setstripe -c -1 bigfile
 	cd bigfile
 	dd if=/dev/zero of=file.txt count=1024000 bs=102400
+	cd ..
 fi
 }
 
