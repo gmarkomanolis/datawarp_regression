@@ -226,7 +226,7 @@ $scheduler_options stage_folder_persistent.sh
 wait_for_job bb_regression_stage_folder_persistent
 save stagefolder_bb_persistent.out 
 wait_for_file output8.txt
-echo -e "Test8: Stage out folder BB Persisten" >> $output
+echo -e "Test8: Stage out folder BB Persistent" >> $output
 save stageout/output8.txt 
 
 prepare_test 9
@@ -237,7 +237,7 @@ wait_for_job bb_regression_stage_file_persistent
 save stagefile_bb_persistent.out 
 
 wait_for_file output10.txt
-echo -e "Test10: Stage out file BB Persisten" >> $output
+echo -e "Test10: Stage out file BB Persistent" >> $output
 save stageout/output10.txt 
 
 echo -e "\nDelete persistent allocation"
