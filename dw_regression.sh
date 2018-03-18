@@ -303,7 +303,7 @@ if [ $run_big_ior -eq 1 ]; then
 	if [ $ior_run -eq 2 ];
 	then
                 echo "16" >> $output
-	        echo "IOR with full DataWarp execution is successful"
+	        echo "IOR execution with full DataWarp space is successful"
 	        grep "Max " bb_big_ior.out >> $output
 	else
 		echo "There is a problem with at least one DataWarp node, contact your support"
