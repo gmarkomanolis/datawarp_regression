@@ -203,7 +203,7 @@ $scheduler_options stage_file.sh
 wait_for_job bb_regression_stage_file
 save stagefile_bb.out 
 wait_for_file output5.txt
-echo -e "Test5: Stage out folder BB" >> $output
+echo -e "Test5: Stage out file BB" >> $output
 save stageout/output5.txt 
 
 # Persistent mode

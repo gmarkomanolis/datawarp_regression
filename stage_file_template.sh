@@ -10,7 +10,7 @@
 #DW stage_out type=file source=$DW_JOB_STRIPED/tmp/output5.txt  destination=/project/k01/markomg/development/bb_regression/stageout/output5.txt
 
 cd $DW_JOB_STRIPED
-echo -e "Test4: Stage in folder BB"
+echo -e "Test4: Stage in file BB"
 cat output4.txt
 
 mkdir tmp
