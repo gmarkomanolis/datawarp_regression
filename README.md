@@ -85,9 +85,9 @@ Test2: Stage in folder BB
 2
 Test3: Stage out folder BB
 3
-Test4: Stage in folder BB
+Test4: Stage in file BB
 4
-Test5: Stage out folder BB
+Test5: Stage out file BB
 5
 Test6: Create Persistent Allocation
 6
