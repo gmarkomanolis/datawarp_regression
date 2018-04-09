@@ -7,6 +7,8 @@ The main script is called [dw_regression.sh](dw_regression.sh)
 
 ## Script preparation
 
+In order to eexcute IOR test cases, it is required to have a binary called ior_bin in the folder that you will execute the regression test.
+
 You can edit the following in the above script:
 
 * If you use a command different than sbatch (the script is not ready to support other schedulers)
