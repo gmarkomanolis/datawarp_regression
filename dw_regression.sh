@@ -31,10 +31,12 @@ output=$results_folder"/dw_regression_"$output_date".txt"
 run_big_ior=1
 
 # Do not edit below if you are not familiar with the code
-
-rm -r tmp
-rm -r stageout
-
+if [ -d tmp ];then
+	rm -r tmp
+fi
+if [ -d stageout ];then
+	rm -r stageout
+fi
 function wait_for_job {
 job=`squeue -n $1 | wc -l`
 while [ $job -gt 1 ]; 
