@@ -118,7 +118,7 @@ then
 fi
 if [ $check -eq 1 ];
 then
-	echo -e "\nPreparing a file of 98 GiB, please wait";
+	echo -e "\nPreparing a file with size equal to 98 GiB, please wait";
 	mkdir bigfile
 	lfs setstripe -c -1 bigfile
 	cd bigfile
